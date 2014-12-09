@@ -1,7 +1,10 @@
 'use strict'
 var assert = require('insist')
-var wordsoapRegex = require('./index.js')
+var wordsoap = require('../index.js')
 
-it('should do something', function () {
-	assert.strictEqual(true, false)
+it('should remove Mso- classes', function () {
+	var input = '<p class=MsoNormal>test</p>'
+	var output = '<p>test</p>'
+	assert.notEqual(wordsoap.msoClass, undefined, 'msoClass is not defined')
+	assert.equal(input.replace(wordsoap.msoClass, ''), output)
 })
