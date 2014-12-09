@@ -1,0 +1,37 @@
+{
+  "name": "wordsoap-regex",
+  "version": "0.0.0",
+  "description": "Regular expressions for cleaning up dirty HTML output from Microsoft Word.",
+  "license": "MIT",
+  "repository": "metaraine/wordsoap-regex",
+  "author": {
+    "name": "Raine Lourie",
+    "email": "raine@collegecoding.com",
+    "url": "https://github.com/metaraine"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "browser": "browserify -s $npm_package_name -o browser.js ."
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "microsoft",
+    "word",
+    "html",
+    "output",
+    "clean",
+    "cleanup",
+    "convert",
+    "converter"
+  ],
+  "devDependencies": {
+    "mocha": "*",
+    "insist": "*",
+    "browserify": "^4"
+  }
+}
