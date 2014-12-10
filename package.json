@@ -2,7 +2,7 @@
   "name": "wordsoap-regex",
   "version": "0.1.0",
   "description": "Regular expressions for cleaning up dirty HTML output from Microsoft Word.",
-  "license": "MIT",
+  "license": "ISC",
   "repository": "metaraine/wordsoap-regex",
   "author": {
     "name": "Raine Lourie",
