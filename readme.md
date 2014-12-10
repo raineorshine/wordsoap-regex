@@ -4,17 +4,12 @@
 
 > Regular expressions for cleaning up dirty HTML output from Microsoft Word.
 
-
-## Install
-
-```sh
-$ npm install --save wordsoap-regex
-```
-
-
-## Usage
-
 ```js
+module.exports = {
+	// from http://tim.mackey.ie/CleanWordHTMLUsingRegularExpressions.aspx
+	msoTags: /<[\/]?(font|span|xml|del|ins|[ovwxp]:\w+)[^>]*?>/,
+	msoAttributes: /<([^>]*)(?:class|lang|style|size|face|[ovwxp]:\w+)=(?:'[^']*'|""[^""]*""|[^\s>]+)([^>]*)>/,
+}
 ```
 
 
